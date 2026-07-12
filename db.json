@@ -1,0 +1,278 @@
+{
+  "templates": [
+    {
+      "id": "1",
+      "title": "Startup Launchpad",
+      "description": "Generate a core backlog for launching a new SaaS product."
+    },
+    {
+      "id": "2",
+      "title": "Security Audit",
+      "description": "Create a comprehensive checklist for web app security reviews."
+    },
+    {
+      "id": "3",
+      "title": "Microservices Sync",
+      "description": "Map out cross-team dependencies and pipeline tracking."
+    }
+  ],
+  "generations": [
+    {
+      "id": "1",
+      "title": "Neo-Bank Feature Set",
+      "meta": "Generated 2 hours ago • 48 tasks created",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "2",
+      "title": "Analytics Dashboard",
+      "meta": "Generated 5 hours ago • 12 tasks created",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "3",
+      "title": "Mobile App Auth Flow",
+      "meta": "Generating... • 0 tasks created",
+      "status": "In progress"
+    },
+    {
+      "title": "android calculator app",
+      "meta": "Generating... • 0 tasks created",
+      "status": "In Progress",
+      "id": "IdBrD1aD8_M"
+    },
+    {
+      "title": "ios app",
+      "meta": "Generating... • 0 tasks created",
+      "status": "In Progress",
+      "id": "dLIit7L9-vY"
+    }
+  ],
+  "teams": [
+    {
+      "id": "1",
+      "name": "Team one",
+      "description": "We are working on an AI powered web app for cancer diagnosis.",
+      "inviteCode": "iioo8897"
+    },
+    {
+      "id": "2",
+      "name": "Team two",
+      "description": "We are working on an iOS app",
+      "inviteCode": "hhbv2255"
+    },
+    {
+      "id": "3",
+      "name": "Team three",
+      "description": "We are working on an e-commerce android app",
+      "inviteCode": "xcfa1363"
+    },
+    {
+      "id": "4",
+      "name": "Team four",
+      "description": "We are working on a desktop app for the HR department",
+      "inviteCode": "pkcj9638"
+    },
+    {
+      "id": "5",
+      "name": "Team five",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbfx5871"
+    },
+    {
+      "id": "6",
+      "name": "Team six",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbio5871"
+    },
+    {
+      "id": "7",
+      "name": "Team seven",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbfx5371"
+    },
+    {
+      "id": "8",
+      "name": "Team eight",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbpx5871"
+    },
+    {
+      "id": "9",
+      "name": "Team nine",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "ebfx5871"
+    },
+    {
+      "id": "10",
+      "name": "Team ten",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbfx5801"
+    }
+  ],
+  "joinedTeams": [
+    {
+      "id": "1",
+      "name": "Team one",
+      "description": "We are working on an AI powered web app for cancer diagnosis.",
+      "inviteCode": "iioo8897"
+    },
+    {
+      "id": "3",
+      "name": "Team three",
+      "description": "We are working on an e-commerce android app",
+      "inviteCode": "xcfa1363"
+    }
+  ],
+  "pendingInvites": [
+    {
+      "id": "J2b0OgK9OEo",
+      "name": "Team five",
+      "description": "We are working on a blockchain system",
+      "inviteCode": "qbfx5871"
+    },
+    {
+      "id": "F-mGi7d2-eU",
+      "name": "Team four",
+      "description": "We are working on a desktop app for the HR department",
+      "inviteCode": "pkcj9638"
+    },
+    {
+      "id": "cqJDsikA5U8",
+      "name": "Team two",
+      "description": "We are working on an iOS app",
+      "inviteCode": "hhbv2255"
+    }
+  ],
+  "users": [
+    {
+      "userName": "oliver9",
+      "email": "oliver@gmail.com",
+      "firstName": "Oliver",
+      "lastName": "Kamel",
+      "password": "Oliver@2005",
+      "id": "-pWMslAGq2s"
+    },
+    {
+      "userName": "medhat10",
+      "email": "medhat@gmail.com",
+      "firstName": "Medhat",
+      "lastName": "Shalaby",
+      "password": "Medhat@1987",
+      "id": "2W6JvikKaRA"
+    },
+    {
+      "userName": "joe786",
+      "email": "joe@gmail.com",
+      "firstName": "Joe",
+      "lastName": "Asl",
+      "password": "Joe@2003",
+      "id": "gCKS6inPdc0"
+    },
+    {
+      "userName": "geo78",
+      "email": "george@gmail.com",
+      "firstName": "George",
+      "lastName": "Dawoud",
+      "password": "George@2007",
+      "id": "hzGS6QhQMuc"
+    },
+    {
+      "userName": "jack45",
+      "email": "jack@gmail.com",
+      "firstName": "Jack",
+      "lastName": "Edward",
+      "password": "Edawrd@2005",
+      "id": "zCLz0jb0Jk8"
+    },
+    {
+      "userName": "oliver897",
+      "email": "oliveradel1905@gmail.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "iiiii88898",
+      "id": "dwnRxY_VPOg"
+    },
+    {
+      "userName": "iii9",
+      "email": "iiiiii@gmail.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "123456",
+      "id": "-B1i8HF7WZE"
+    },
+    {
+      "userName": "jason66",
+      "email": "jason78@gmail.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "rrff5567",
+      "id": "vAFJiHFPVpU"
+    },
+    {
+      "userName": "geoginsa78111",
+      "email": "georgeinsaoi77@gmail.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "George@2007",
+      "id": "Q6UMFXMhh9U"
+    },
+    {
+      "userName": "dallas325",
+      "email": "dallas12@yahoo.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "DALLAS789",
+      "id": "Zo1FlVkI8e0"
+    },
+    {
+      "userName": "iowa99",
+      "email": "iowa77@yahoo.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "iowa88",
+      "id": "x_UNhUrez_8"
+    },
+    {
+      "userName": "jasonMomoa88",
+      "email": "jasonmomoa22@gmail.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "jason123",
+      "id": "iSpuLbu2DyI"
+    },
+    {
+      "userName": "nick3",
+      "email": "nickadams325@outlook.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "nick123",
+      "id": "D7ovIbVYydE"
+    },
+    {
+      "userName": "naman22",
+      "email": "namanmishra@outlook.com",
+      "firstName": "My First Name",
+      "lastName": "My Last Name",
+      "password": "naman456",
+      "id": "ufneyLnWHNw"
+    },
+    {
+      "userName": "oka7",
+      "email": "okaoka77@gmail.com",
+      "firstName": "Oka",
+      "lastName": "Koa",
+      "password": "OKA77",
+      "id": "-9CJAgPBfxE"
+    },
+    {
+      "userName": "ooo",
+      "email": "oliverad1905@gmail.com",
+      "firstName": "ooo",
+      "lastName": "ooo",
+      "password": "rrr4",
+      "id": "FOybs6VWChk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
