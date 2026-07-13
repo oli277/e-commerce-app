@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#e9ecef] w-full flex items-center justify-end px-8 py-4">
+    <footer className="bg-[#e9ecef] w-full flex items-center justify-center px-8 py-4">
       
       <div className="flex items-center gap-6 text-slate-500">
         <a 

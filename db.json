@@ -228,6 +228,62 @@
   
 
   ],
+
+  "categories": [
+    
+  {
+    "name": "music",
+    "title": "Music",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894858/musicCategory_die4nb.jpg"
+  },
+  {
+    "name": "mens-fahsion",
+    "title": "Men's Fashion",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894860/menCategory_s27neu.jpg"
+  },
+  {
+    "name": "baby-toys",
+    "title": "Baby and Toys",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894857/babyToysCategory_u5dh3f.png"
+  },
+  {
+    "name": "supermarket",
+    "title": "SuperMarket",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894859/cookingCategory_bryidj.png"
+  },
+  {
+    "name": "utilities",
+    "title": "Utilities and Appliances",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894859/utilitiesCategory_elpxv8.png"
+  },
+  {
+    "name": "books",
+    "title": "Books",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894858/booksCategory_qwg1nt.png"
+  },
+  {
+    "name": "beaty-and-health",
+    "title": "Beauty & Health",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894858/beautyCategory_pjiqdo.png"
+  },
+  {
+    "name": "mobiles",
+    "title": "Mobile Phones",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894860/phonesCategory_igtvqp.png"
+  },
+  {
+    "name": "electronics",
+    "title": "Electronics",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894857/electronicsCategory_vor4gp.jpg"
+  },
+  {
+    "name": "women-fashion",
+    "title": "Women Fashion",
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894861/womenCategory_p5qcyp.avif"
+  }
+  
+
+  ],
   
   
   "$schema": "./node_modules/json-server/schema.json"

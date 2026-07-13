@@ -22,8 +22,12 @@ function useFetchProducts(url) {
         setIsLoading(false)
       })
       .catch(err => {
-        setError(err.message)
-        setIsLoading(false)
+        if (err.name === "AbortError") {
+          console.log("Fetch aborted");
+        } else {
+          setError(err.message);
+          setIsLoading(false);
+        }
       })
 
       return () => controller.abort()
