@@ -1,37 +1,39 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// Layout Components
+import Navigation from './components/NavigationBar/navigation';
+import Footer from './components/Footer/footer';
 
-
-
-
-
-
-function RouteFallback() {
-  return (
-    <div className="flex min-h-svh items-center justify-center bg-background text-foreground">
-      <p className="font-sans text-sm text-muted-foreground">Loading…</p>
-    </div>
-  );
-}
+// Pages
+import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
+import CategoriesPage from './pages/CategoriesPage';
+import CartPage from './pages/CartPage';
+import WishListPage from './pages/WishListPage';
 
 function App() {
   return (
-    <BrowserRouter>
-    
-      <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 relative">
-        
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        {/* Navigation stays at the top of every page */}
+        <Navigation />
 
-        <Suspense fallback={<RouteFallback />}>
+        {/* Main content area expands to push footer to the bottom */}
+        <main className="flex-grow">
           <Routes>
-            
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/categories" element={<CategoriesPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/wishlist" element={<WishListPage />} />
           </Routes>
-        </Suspense>
+        </main>
 
-        <ThemeToggle />
-        
+        {/* Footer stays at the bottom of every page */}
+        <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

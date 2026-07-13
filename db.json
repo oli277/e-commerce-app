@@ -173,7 +173,59 @@
     "price": 1749,
     "rating": 5,
     "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783897561/sportsJacketMen_pytuzv.jpg"
+  },
+
+  
+  {
+    "name": "Archer VR300",
+    "title": "Archer VR300 AC1200 Wireless VDSL/ADSL Modem Router Black",
+    "category": "electronics",
+    "components": "Parental Controls: manage responsible internet access for your children Guest Network|: provides separate access for guests while securing the home network Firewall Security: supports DoS, SPI Firewall, IP Addressing/Domain Filter, IP/MAC Address Binding Quality of Service: prioritizes network traffic by device or application, IPv6: compatible with IPv6 (Internet Protocol version 6) IPTV IGMP Proxy/Snooping: supports Bridge and Tag VLAN for smooth IPTV application, Multilingual Interface: provides hassle-free configuration in six languages (EN/DE/IT/TR/RU/PO)",
+    "price": 1699,
+    "rating": 5,
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783947086/dishElectro_g2uqzi.jpg"
+  },
+  
+  {
+    "name": "PIXMA G3420",
+    "title": "PIXMA G3420 Multi-Function Inkjet Printer Black",
+    "category": "electronics",
+    "components": "photos with a maximum print-color resolution of 4800 x 1200 dpi using FINE printhead technology. AirPrint allows you to print directly from your iPhone iPad or iPod touch wirelessly while built-in Wi-Fi technology allows you to print and scan wirelessly from virtually anywhere around your small office Environmentally friendly, Auto Duplex Printing allows you to automatically print on both sides of paper to reduce paper usage. Full HD Movie Print turns fav Innovative intelligence helps to achieve consistent results Easy and smooth to use as per convenience It is designed keeping your choice and requirement in mind",
+    "price": 5999,
+    "rating": 5,
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783947086/casetElectro_v5jyui.jpg"
+  },
+  
+  {
+    "name": "EOS M50",
+    "title": "EOS M50 Mark II Mirrorless Digital Camera With 15-45mm Lens Black",
+    "category": "electronics",
+    "components": "24.1 megapixel (aps-c) cmos sensor with iso 100-25600 (h: 51200) digic 8 image processor with auto lighting optimizer improved dual pixel cmos af and eye detection af (still/movie servo af support) 4k uhd 24p and hd 120p for slow motion vari-angle touchscreen lcd convenient for vlogging and various composition",
+    "price": 19699,
+    "rating": 5,
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783947086/cameraElectro_q1lqre.jpg"
+  },
+  
+  {
+    "name": "PS5 DualSense",
+    "title": "PS5 DualSense Charging Station",
+    "category": "electronics",
+    "components": "Charge up to two DualSense Wireless Controllers at the same time without having to connect them to your PlayStation 5 Console Your Controllers charge as quickly as when connected to your PS5 Console – so you can free up USB ports without sacrificing performance Dock your DualSense Wireless Controllers quickly and easily with the charging station’s click-in design and leave them to charge at your convenience",
+    "price": 1045,
+    "rating": 5,
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783947085/armsElectro_duz12y.jpg"
+  },
+  
+  {
+    "name": "Victus 16-D1016Ne",
+    "title": "Victus 16-D1016Ne Laptop With 16-Inch Display Core I7-12700H Processor 16Gb Ram 1Tb Nvidia Geforce Rtx3050 Ti Graphics English/Arabic Ceramic White",
+    "category": "electronics",
+    "components": "NVIDIA GeForce RTX 3060, 6 GB GDDR6 15.6, FHD 1920x1080, 120Hz, Non-Touch, AG, WVA, LED-Backlit, 300 nit, Narrow Border 16 GB, 2 x 8 GB, DDR5, 4800 MHz, dual-channel 512GB M.2 PCIe NVMe Solid State Drive, Nahimic 3D Audio Office Home & Student 2021, US English orange qwerty backlit keyboard with numeric keypad and G-key",
+    "price": 42960,
+    "rating": 5,
+    "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783947086/laptobElectro_hhkiqf.jpg"
   }
+  
 
   ],
   
