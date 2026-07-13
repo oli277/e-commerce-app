@@ -16,10 +16,10 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        {/* Navigation stays at the top of every page */}
+      
         <Navigation />
 
-        {/* Main content area expands to push footer to the bottom */}
+       
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -30,7 +30,7 @@ function App() {
           </Routes>
         </main>
 
-        {/* Footer stays at the bottom of every page */}
+       
         <Footer />
       </div>
     </Router>
