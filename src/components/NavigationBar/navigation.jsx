@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag } from 'lucide-react';
+import { useCart } from "../../CustomHooks/CartContext"
+import { useWishList } from "../../CustomHooks/WishListContext"
+
 
 export default function Navigation() {
+
+  const {items} = useCart()
+  const {Witems} = useWishList()
+
   return (
     <nav className="bg-[#e9ecef] w-full flex items-center px-6 py-3 shadow-sm">
       
@@ -26,7 +33,7 @@ export default function Navigation() {
             Cart
            
             <span className="absolute -top-2.5 -right-3 bg-orange-500 text-black text-[10px] font-bold h-[18px] w-[18px] flex items-center justify-center rounded-full">
-              0
+              {items.length}
             </span>
           </Link>
         </li>
@@ -41,8 +48,12 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link to="/wishlist" className="hover:text-black transition-colors">
-            Wishlist
+          <Link to="/wishlist" className="relative hover:text-black transition-colors flex items-center">
+            wishlist
+           
+            <span className="absolute -top-2.5 -right-3 bg-orange-500 text-black text-[10px] font-bold h-[18px] w-[18px] flex items-center justify-center rounded-full">
+              {Witems.length}
+            </span>
           </Link>
         </li>
       </ul>

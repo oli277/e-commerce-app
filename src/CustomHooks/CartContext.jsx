@@ -1,4 +1,4 @@
-import { useLocalStorage } from "../Hooks/useLocalStorage";
+import { useLocalStorage } from "../CustomHooks/localStore";
 import { createContext, useContext } from "react";
 
 const CartContext = createContext();

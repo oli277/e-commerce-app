@@ -1,18 +1,30 @@
-import React from "react";
 import useFetchProducts from "../../CustomHooks/FetchProducts";
+import { useCart } from "../../CustomHooks/CartContext"
+import { useWishList } from "../../CustomHooks/WishListContext"
+import React, { useRef, useEffect, useState } from "react";
+import toast from 'react-hot-toast'
 
 export default function PopularCategories() {
   const url = "http://localhost:5000/products";
   const { data, isloading, error } = useFetchProducts(url);
+  const {addToCart, items} = useCart()
+  const {Witems, addToWishList} = useWishList()
+ 
 
   const handleAddToCart = (product, e) => {
     e.stopPropagation();
     console.log("Added to cart:", product.name);
+    addToCart(product)
+    toast.success('Added to cart!')
+    console.log(items);
   };
 
   const handleAddToWishlist = (product, e) => {
     e.stopPropagation();
     console.log("Added to wishlist:", product.name);
+    addToWishList(product)
+    console.log(Witems)
+    toast.success('Added to Wishlist!')
   };
 
   const handleQuickView = (product, e) => {
@@ -90,7 +102,10 @@ export default function PopularCategories() {
                 className="w-full bg-[#fccf47] hover:bg-[#ebd065] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-300 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto text-sm"
               >
                 Add to cart
+                
               </button>
+              
+              
             </div>
           </div>
         ))}

@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
+import { WishListProvider } from "./CustomHooks/WishListContext"
+import { CartProvider } from "./CustomHooks/CartContext"
+import { Toaster } from 'react-hot-toast'
 import Navigation from './components/NavigationBar/navigation';
 import Footer from './components/Footer/footer';
 
@@ -14,8 +16,15 @@ import HomePage from './pages/HomePage';
 
 function App() {
   return (
+    <CartProvider>
+      <WishListProvider>
+
+     
+   
     <Router>
       <div className="flex flex-col min-h-screen">
+
+        <Toaster position="top-center" />
       
         <Navigation />
 
@@ -34,6 +43,8 @@ function App() {
         <Footer />
       </div>
     </Router>
+     </WishListProvider>
+     </CartProvider>
   );
 }
 
