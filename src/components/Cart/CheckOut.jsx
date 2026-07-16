@@ -8,7 +8,7 @@ export default function CheckOut() {
   return (
     <div className="max-w-6xl mx-auto my-10 bg-white border border-gray-100 shadow-sm rounded-md overflow-hidden font-sans">
            
-      {/* --- CHECKOUT AREA --- */}
+      
       <div className="bg-white py-6 flex justify-center">
         <button 
           onClick={() => { console.log("Checkout clicked") }}

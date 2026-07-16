@@ -1,10 +1,10 @@
 import React from 'react';
-// import Categories from "../components/Categories/categories";
+import WishList from "../components/wishList/wishlist";
 
 export default function WishListPage() {
   return (
     <div>
-      
+      <WishList/>
     </div>
   );
 }
