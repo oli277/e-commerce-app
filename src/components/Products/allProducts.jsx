@@ -1,36 +1,43 @@
 import useFetchProducts from "../../CustomHooks/FetchProducts";
-import { useCart } from "../../CustomHooks/CartContext"
-import { useWishList } from "../../CustomHooks/WishListContext"
-import React, { useRef, useEffect, useState } from "react";
-import toast from 'react-hot-toast'
+import { useCart } from "../../CustomHooks/CartContext";
+import { useWishList } from "../../CustomHooks/WishListContext";
+import React, { useState } from "react";
+import toast from 'react-hot-toast';
 
 export default function AllProducts() {
   const url = "http://localhost:5000/products";
   const { data, isloading, error } = useFetchProducts(url);
-  const {addToCart, items} = useCart()
-  const {Witems, addToWishList} = useWishList()
- 
+  const { addToCart, items } = useCart();
+  const { Witems, addToWishList } = useWishList();
+  
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleAddToCart = (product, e) => {
     e.stopPropagation();
-    console.log("Added to cart:", product.name);
-    addToCart(product)
-    toast.success('Added to cart!')
-    console.log(items);
+    addToCart(product);
+    toast.success('Added to cart!');
   };
 
   const handleAddToWishlist = (product, e) => {
     e.stopPropagation();
-    console.log("Added to wishlist:", product.name);
-    addToWishList(product)
-    console.log(Witems)
-    toast.success('Added to Wishlist!')
+    addToWishList(product);
+    toast.success('Added to Wishlist!');
   };
 
   const handleQuickView = (product, e) => {
     e.stopPropagation();
     console.log("Quick view:", product.name);
   };
+
+  
+  const filteredProducts = data ? data.filter((product) => {
+    const query = searchQuery.toLowerCase();
+    const matchesName = product.name?.toLowerCase().includes(query);
+    const matchesCategory = product.category?.toLowerCase().includes(query);
+    const matchesPrice = product.price?.toString().includes(query);
+    
+    return matchesName || matchesCategory || matchesPrice;
+  }) : [];
 
   if (isloading) return <div className="text-center py-10">Loading products...</div>;
   if (error) return <div className="text-center py-10 text-red-500">Error loading products.</div>;
@@ -39,25 +46,54 @@ export default function AllProducts() {
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold text-center text-gray-800 mb-8"> All Products</h2>
 
+      
+      <div className="w-full max-w-2xl mx-auto mb-10">
+        <form 
+          onSubmit={(e) => e.preventDefault()} 
+          className="flex items-center w-full bg-white border border-gray-300 rounded-lg p-1.5 shadow-sm focus-within:border-amber-400 focus-within:ring-1 focus-within:ring-amber-400 transition-all"
+        >
+          <div className="pl-3 pr-2 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </div>
+
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Name, Categories , Price..."
+            className="flex-grow py-2 px-1 text-gray-700 bg-transparent outline-none placeholder-gray-400 text-sm md:text-base"
+          />
+
+        </form>
+      </div>
+
+      
+      {filteredProducts.length === 0 && (
+        <div className="text-center py-12 text-gray-500">
+          No products found matching "{searchQuery}"
+        </div>
+      )}
+
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-        {data && data.map((product, index) => (
+        {filteredProducts.map((product) => (
           <div 
-            key={index} 
+            key={product.id || product._id || product.name} 
             className="group relative flex flex-col bg-white rounded-lg p-2 transition-shadow duration-300 hover:shadow-lg cursor-pointer"
           >
-          
             <div className="relative w-full aspect-square bg-[#f8f8f8] rounded-md mb-4 overflow-hidden flex items-center justify-center">
               <img 
                 src={product.image} 
                 alt={product.name} 
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain mix-blend-multiply"
               />
-
               
               <div className="absolute top-2 left-0 right-0 flex justify-between px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <button 
                   onClick={(e) => handleAddToWishlist(product, e)}
-                  className=" cursor-pointer p-1.5 bg-white rounded-full text-gray-400 hover:text-amber-500 shadow-sm transition-colors"
+                  className="cursor-pointer p-1.5 bg-white rounded-full text-gray-400 hover:text-amber-500 shadow-sm transition-colors"
                   aria-label="Add to wishlist"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -67,7 +103,7 @@ export default function AllProducts() {
                 
                 <button 
                   onClick={(e) => handleQuickView(product, e)}
-                  className="p-1.5 bg-white rounded-full text-gray-400 hover:text-blue-500 shadow-sm transition-colors"
+                  className="p-1.5 bg-white rounded-full text-gray-400 hover:text-blue-500 shadow-sm transition-colors cursor-pointer"
                   aria-label="Quick view"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -77,7 +113,6 @@ export default function AllProducts() {
               </div>
             </div>
 
-           
             <div className="flex flex-col flex-grow">
               <span className="text-[11px] font-medium text-[#c98835] uppercase mb-1">
                 {product.category}
@@ -96,16 +131,12 @@ export default function AllProducts() {
                 </div>
               </div>
 
-             
               <button 
                 onClick={(e) => handleAddToCart(product, e)}
-                className=" cursor-pointer w-full bg-[#fccf47] hover:bg-[#ebd065] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-300 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto text-sm"
+                className="cursor-pointer w-full bg-[#fccf47] hover:bg-[#ebd065] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-300 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto text-sm"
               >
                 Add to cart
-                
               </button>
-              
-              
             </div>
           </div>
         ))}
