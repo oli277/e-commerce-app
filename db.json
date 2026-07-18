@@ -4,7 +4,7 @@
   {
     "name": "Woman Shawl",
     "title": "Woman Shawl",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Material Polyester Blend Colour Name Multicolour Department Women",
     "price": 450,
     "rating": 4.5,
@@ -13,7 +13,7 @@
   {
     "name": "Woman Shawl",
     "title": "Woman Shawl",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Material Polyester Blend Colour Name Multicolour Department Women",
     "price": 450,
     "rating": 4.5,
@@ -22,7 +22,7 @@
   {
     "name": "Woman Shawl",
     "title": "Woman Shawl",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Material Polyester Blend Colour Name Multicolour Department Women",
     "price": 450,
     "rating": 4.5,
@@ -31,7 +31,7 @@
   {
     "name": "Woman Bordeaux",
     "title": "Woman Bordeaux Long Sleeve Blouse BORDEAUX",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "ShellFabric1 Cotton 65% Polyester 35%",
     "price": 450,
     "rating": 4.5,
@@ -40,7 +40,7 @@
   {
     "name": "Woman Brown",
     "title": "Woman Brown Long Sleeve Tunic LT.CAMEL",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "ShellFabric1 Cotton 65% Polyester 35%",
     "price": 450,
     "rating": 4.5,
@@ -49,7 +49,7 @@
   {
     "name": "Woman Standart",
     "title": "Woman Standart Fit Knitted Cardigan",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Material Polyester Blend Colour Name Beige Department Women",
     "price": 450,
     "rating": 4.5,
@@ -58,7 +58,7 @@
   {
     "name": "Relaxed Fit",
     "title": "Relaxed Fit Knitted Joggers Lilac",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Colour Name Pink Department Women Material Composition Polyester Blend",
     "price": 450,
     "rating": 4.5,
@@ -67,7 +67,7 @@
   {
     "name": "Woman Socks",
     "title": "Woman Socks",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Colour Name Pink Department Women Material Composition Polyester Blend",
     "price": 450,
     "rating": 4.5,
@@ -76,7 +76,7 @@
   {
     "name": "Woman Karma",
     "title": "Woman Karma Socks Multicolour",
-    "category": "Women's Fashion",
+    "category": "women-fashion",
     "components": "Soft and comfortable cotton fabric Crew neck and short sleeves Comfortable, regular fit Wash according to care label instructions",
     "price": 450,
     "rating": 4.5,
@@ -237,7 +237,7 @@
     "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894858/musicCategory_die4nb.jpg"
   },
   {
-    "name": "mens-fahsion",
+    "name": "men's-fashion",
     "title": "Men's Fashion",
     "image": "https://res.cloudinary.com/i0cg5wxa/image/upload/v1783894860/menCategory_s27neu.jpg"
   },

@@ -57,7 +57,7 @@ export default function PopularCategories() {
               <div className="absolute top-2 left-0 right-0 flex justify-between px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <button 
                   onClick={(e) => handleAddToWishlist(product, e)}
-                  className="p-1.5 bg-white rounded-full text-gray-400 hover:text-amber-500 shadow-sm transition-colors"
+                  className="cursor-pointer p-1.5 bg-white rounded-full text-gray-400 hover:text-amber-500 shadow-sm transition-colors"
                   aria-label="Add to wishlist"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -99,7 +99,7 @@ export default function PopularCategories() {
              
               <button 
                 onClick={(e) => handleAddToCart(product, e)}
-                className="w-full bg-[#fccf47] hover:bg-[#ebd065] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-300 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto text-sm"
+                className="cursor-pointer w-full bg-[#fccf47] hover:bg-[#ebd065] text-gray-900 font-semibold py-2 px-4 rounded transition-all duration-300 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto text-sm"
               >
                 Add to cart
                 
