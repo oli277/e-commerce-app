@@ -29,9 +29,7 @@ export default function WishList() {
         <div className="col-span-5 text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Product
         </div>
-        <div className="col-span-3 text-center text-sm font-semibold text-gray-500 uppercase tracking-wide">
-          Quantity
-        </div>
+        
         <div className="col-span-2 text-center text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Price
         </div>
@@ -61,10 +59,6 @@ export default function WishList() {
                 <span className="font-bold text-black text-base">
                   {product.name}
                 </span>
-              </div>
-
-              <div className="col-span-3 flex justify-center items-center gap-4">
-                
               </div>
 
               <div className="col-span-2 text-center font-bold text-black text-base">

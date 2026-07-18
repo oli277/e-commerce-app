@@ -1,5 +1,5 @@
 import React from 'react';
-// import allProducts from "../components/Products/allProducts";
+import AllProducts from "../components/Products/allProducts";
 // import sFilter from "../components/Products/filter";
 // import pSearch from "../components/Products/search";
 
@@ -7,7 +7,7 @@ import React from 'react';
 export default function ProductsPage() {
   return (
     <div>
-      
+     <AllProducts/> 
     </div>
   );
 }
