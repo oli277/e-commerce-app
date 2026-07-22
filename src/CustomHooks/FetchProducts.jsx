@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 function useFetchProducts(url) {
@@ -9,31 +8,31 @@ function useFetchProducts(url) {
   useEffect(() => {
     const controller = new AbortController();
 
-  
-      fetch(url, {signal : controller.signal})
-      .then(response => {
-        if(!response.ok) throw new Error(`Error ${response.status}`)
-        return response.json()
-      }
-        
-      )
-      .then(body => {
-        setData(body)
-        setIsLoading(false)
+    setIsLoading(true);
+    setError("");
+
+    fetch(url, { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Error ${response.status}`);
+        return response.json();
       })
-      .catch(err => {
+      .then((body) => {
+        setData(body);
+        setIsLoading(false);
+      })
+      .catch((err) => {
         if (err.name === "AbortError") {
           console.log("Fetch aborted");
         } else {
           setError(err.message);
           setIsLoading(false);
         }
-      })
+      });
 
-      return () => controller.abort()
+    return () => controller.abort();
   }, [url]);
 
-  return {data, isloading, error}
+  return { data, isloading, error };
 }
 
 export default useFetchProducts;

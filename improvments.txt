@@ -1,0 +1,19 @@
+- use TanStack Query instead of writing my own fetch hook
+
+- learn to use useCallback and useMemo hooks to avoid useless rerenders
+
+- learn more about the e.stopPropagation() and when to use instead
+
+- refrain from DRY mistakes
+
+- use unique id in mapping
+
+- use environment variables and avoid hardcoding URLs
+
+- learn how to use React Hook Form and zod
+
+
+ 
+
+
+
